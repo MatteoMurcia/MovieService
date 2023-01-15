@@ -20,12 +20,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("registration/", views.register),
-    path("login/",views.login),
-    path("addItem/",views.addItem),
-    path("getPublicMovies/",views.getPublicList),
-    path("getPrivateMovies/",views.getPrivateList),
-    path("editMovie/",views.editMovie)
+    path('/admin/', admin.site.urls),
+    path("/registration/", views.register),
+    path("/login/",views.login),
+    path("/addItem/",views.addItem),
+    path("/getPublicMovies/",views.getPublicList),
+    path("/getPrivateMovies/",views.getPrivateList),
+    path("/editMovie/",views.editMovie)
     
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
