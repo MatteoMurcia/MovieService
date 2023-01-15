@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from ApiTest import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +28,4 @@ urlpatterns = [
     path("getPrivateMovies/",views.getPrivateList),
     path("editMovie/",views.editMovie)
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
