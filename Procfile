@@ -1,1 +1,1 @@
-web: gunicorn <project_name>.wsgi --log-file -
+web: gunicorn api-test-block57.wsgi --log-file -
