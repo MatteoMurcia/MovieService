@@ -1,1 +1,0 @@
-web: gunicorn api-test-block57.wsgi --log-file -
